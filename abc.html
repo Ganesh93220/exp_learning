@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Alumni Portal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #dce7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #142b6f;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #1e3a8a;
+            padding-bottom: 5px;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #142b6f;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            background-color: #eef2ff;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .gallery-item p {
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+        .donation-buttons {
+            margin-bottom: 15px;
+        }
+
+        .donation-buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #2563eb;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .donation-buttons button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .news-feed ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .news-feed li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>School Alumni Portal</h1>
+        <p>Reconnect, Celebrate, and Support Your School</p>
+    </header>
+
+    <nav>
+        <a href="https://www.sbjit.edu.in/">Home</a>
+        <a href="https://www.sbjit.edu.in/">Register</a>
+        <a href="https://www.sbjit.edu.in/">Gallery</a>
+        <a href="https://www.sbjit.edu.in/">Donate</a>
+        <a href="https://www.sbjit.edu.in/">News</a>
+    </nav>
+
+    <div class="container">
+
+        <section>
+            <h2>Alumni Registration</h2>
+            <form>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Passing Year</label>
+                <input type="number" placeholder="Enter passing year">
+
+                <label>Current Profession</label>
+                <input type="text" placeholder="Enter your profession">
+
+                <input type="submit" value="Register">
+            </form>
+        </section>
+
+        <section>
+            <h2>Event Gallery</h2>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDTdlNFmLdnmWtrtvOOaFXHil6ez9eoAaoJg&s" alt="Annual Meet">
+                    <p>Sports day</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMf5wAVrikcwYx6SBZ709dFFl5Xhs5vT33Fw&s" alt="Sports Day">
+                    <p>Farewelly</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6IOdKBWLWo56HM6BKlVYTvh5pz8SVyRFRfg&s" alt="Reunion">
+                    <p>Cultural fest</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTif5bdbZW8A80EfKV0cDEdNJ53D3ZN3UU15w&s" alt="Cultural Fest">
+                    <p>Reunion</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmY_7SPbmwAMgmtY0aJgXADtmyzbE22AZq9w&s" alt="Farewell">
+                    <p>Techmotsav</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpOLaB4E104_nyW6aFOPeiJlG5Ut3JpSF4g&s" alt="Award Ceremony">
+                    <p>Award Ceremony</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Donate to School Development</h2>
+
+            <div class="donation-buttons">
+                <button>₹500</button>
+                <button>₹1000</button>
+                <button>₹5000</button>
+                <button>₹10000</button>
+            </div>
+
+            <form>
+                <label>Custom Donation Amount</label>
+                <input type="number" placeholder="Enter amount">
+
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <input type="submit" value="Donate Now">
+            </form>
+        </section>
+
+        <!-- News Feed Section -->
+        <section class="news-feed">
+            <h2>Latest News Feed</h2>
+            <ul>
+                <li>Alumni Meet 2026 will be held on 20th APR.</li>
+                <li>New library building inaugurated by senior alumni.</li>
+                <li>School football team won the inter-school championship.</li>
+                <li>Donation campaign started for smart classrooms.</li>
+                <li>Registration for annual reunion is now open.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 School Alumni Portal | CS25139</p>
+    </footer>
+
+</body>
+</html>
